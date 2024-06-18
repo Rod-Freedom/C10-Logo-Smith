@@ -1,0 +1,26 @@
+{
+  "name": "c10-logo-smith",
+  "version": "1.0.0",
+  "description": "Craft your own logo as if made by the grand craftsmen Brokkr and Eitri!",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  },
+  "keywords": [],
+  "type": "module",
+  "author": "Rod-Freedom",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.2.23",
+    "jest": "^29.7.0"
+  },
+  "devDependencies": {
+    "babel-jest": "^29.7.0"
+  }
+}
