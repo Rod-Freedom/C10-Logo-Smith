@@ -26,7 +26,7 @@ export default class Logo {
             none: "rgba(0,0,0,0)",
         };
 
-        return bgRel[this.color]
+        return bgRel[this.bgColor]
     }
 
     fontForge () {
@@ -46,7 +46,7 @@ export default class Logo {
         return fontRel[this.font]
     }
 
-    formForge () {
+    figureForge () {
         console.log('No form has been chosen.');
     }
     
@@ -54,13 +54,13 @@ export default class Logo {
         return `<tspan class="cls-3" x="${this.textPos.x}" y="${this.textPos.y}">${this.text}</tspan>`
     }
 
-    gradientForge () {
+    gradientElForge () {
         return `<linearGradient id="linear-gradient" ${this.shadow.values} gradientUnits="userSpaceOnUse">
-    <stop offset="0" stop-color="#000000" stop-opacity=".8"/>
-    <stop offset=".2" stop-color="rgba(0,0,0,.57)" stop-opacity=".57"/>
-    <stop offset=".65" stop-color="rgba(0,0,0,.15)" stop-opacity=".15"/>
-    <stop offset=".94" stop-color="#000000" stop-opacity="0"/>
-</linearGradient>`
+                <stop offset="0" stop-color="#000000" stop-opacity=".8"/>
+                <stop offset=".2" stop-color="rgba(0,0,0,.57)" stop-opacity=".57"/>
+                <stop offset=".65" stop-color="rgba(0,0,0,.15)" stop-opacity=".15"/>
+                <stop offset=".94" stop-color="#000000" stop-opacity="0"/>
+            </linearGradient>`
     }
 
     setColors () {

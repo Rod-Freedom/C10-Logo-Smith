@@ -1,6 +1,6 @@
 import Logo from "./logo.js";
 
-class Square extends Logo {
+export default class Square extends Logo {
     constructor (obj) {
         super(obj);
         this.shadow = this.bgColor !== 'none' ? 
@@ -8,7 +8,7 @@ class Square extends Logo {
             : { element: '', values: 'x1="778.63" y1="778.63" x2="1337.3" y2="1337.3" gradientTransform="translate(1256.02 -1301.02) rotate(59.67) scale(1.4 1.22) skewX(26.1)"'};
     }
 
-    formForge () {
+    figureForge () {
         return `<rect class="cls-1" x="calc(777.3 - 478.9)" y="calc(777.3 - 478.9)" width="calc(478.9 * 2)" height="calc(478.9 * 2)" rx="90" />`
     }
 }
