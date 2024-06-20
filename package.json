@@ -17,6 +17,7 @@
   "author": "Rod-Freedom",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^5.3.0",
     "inquirer": "^9.2.23",
     "jest": "^29.7.0"
   },
