@@ -47,7 +47,7 @@ export default class Logo {
     }
 
     figureForge () {
-        console.log('No form has been chosen.');
+        throw new Error('No form has been chosen.')
     }
     
     textElForge () {

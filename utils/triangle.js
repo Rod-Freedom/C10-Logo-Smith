@@ -6,7 +6,7 @@ export default class Triangle extends Logo {
         this.textPos.y = '1040';
         this.shadow = this.bgColor !== 'none' ? 
             { element: '<rect class="cls-5" x="585.89" y="514.53" width="1026.53" height="1350.27" transform="translate(-513.36 1342.06) rotate(-52.66)"/>', values: 'x1="-38.86" y1="-23.93" x2="519.81" y2="534.73" gradientTransform="translate(1109.39 590.42) rotate(60.43) scale(1.39 1.19) skewX(27.16)"'}
-            : { element: '', values: 'x1="-38.86" y1="-23.93" x2="519.81" y2="534.73" gradientTransform="translate(1109.39 590.42) rotate(60.43) scale(1.39 1.19) skewX(27.16)"'};
+            : { element: '', values: ''};
     }
 
     figureForge () {
