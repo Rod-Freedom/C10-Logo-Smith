@@ -2,10 +2,34 @@ import logoForge from './utils/logoSmithy.js';
 import inquirer from 'inquirer';
 import chalk from 'chalk';
 import fs from 'fs';
+import { createSpinner } from 'nanospinner';
+import chalkAnimation from 'chalk-animation';
 
-const introFunc = () => {
-    const logo = ;
-    console.log(chalk.bold)
+const thanksFunc = (spinner) => {
+    const thanks = `
+            ......Thanks for using ${chalk.bold('Logo Smith')}......
+            `;
+    const logo = `
+
+                    $$$$$$$$$$$$$$$$$$$$$$
+                    $$$$$$$$$$$$$$$$$$$$$$
+                    $$$$$$  ______  $$$$$$
+                    $$$$$$  $$$$$$  $$$$$$
+                    $$$$$$  $$$$$$  $$$$$$
+                            $$$$$$        
+                            $$$$$$        
+                            $$$$$$        
+                            $$$$$$        
+                            $$$$$$        
+
+    `;
+    const inst = chalk.bold.magentaBright(`Please find your logo inside your_crafted_svg folder.\n`);
+    
+    spinner.success();
+    console.log(inst);
+    console.log(thanks);
+    const neon = chalkAnimation.neon(logo);
+    setTimeout(() => neon.stop(), 5000);
 };
 
 const inquirerFunc = () => {
@@ -92,6 +116,7 @@ const inquirerFunc = () => {
     inquirer
         .prompt(questions)
         .then(answers => {
+            const spinner = createSpinner('Run test');
             const content = logoForge(answers);
             let fileDir = `./your_crafted_svg/${answers.text}_LS.svg`;
 
@@ -99,16 +124,27 @@ const inquirerFunc = () => {
             
             fs.writeFile(fileDir, content, err => {
                 if (err) console.log('Sorry, something weird happened...')
-                else console.log('Thanks!')
+                else thanksFunc(spinner)
             })
         })
         .catch(err => console.log('Sorry, something weird happened...'))
-}
+};
 
 const startFunc = () => {
-    inquirerFunc();
+    console.log(chalk.italic(`
+      Rod-Freedom presents
+    `))
+    const intro = `
+           Logo Smith
+
+    `;
+    const neon = chalkAnimation.neon(intro);
+
+    setTimeout(() => {
+        neon.stop();
+        process.stdout.moveCursor(0, -1);
+        inquirerFunc();
+    }, 4000)
 };
 
 startFunc();
-
-// console.log(logoForge({ figure: 'triangle', text:'ROD1', bgColor: 'beige', font: 'jersey10', color: 'underworld', }));
