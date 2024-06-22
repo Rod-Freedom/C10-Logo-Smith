@@ -142,7 +142,6 @@ const startFunc = () => {
 
     setTimeout(() => {
         neon.stop();
-        process.stdout.moveCursor(0, -1);
         inquirerFunc();
     }, 4000)
 };

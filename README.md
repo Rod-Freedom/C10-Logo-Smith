@@ -15,9 +15,14 @@
 
 ## **ABOUT THE PROJECT**
 ### **Overview**
-Something
+Craft Your Logo with Legendary Precision.
 
-Find the repo [here](https://github.com/Rod-Freedom/C10-Logo-Smith).
+Logo Smith, a Node.js app, empowers you to create impactful logos effortlessly. Customize easily, iterate in an instant, and export flawlessly. Start forging your logo today!
+
+The process will take you less than a minute, and you'll have a careful selection of fonts and color schemes at your disposal. You'll also have the option of adding a tasteful background for your logo, perfect for favicons and profile pics.
+
+*Find the repo [here](https://github.com/Rod-Freedom/C10-Logo-Smith).*<br>
+*Watch our tutorial [here](https://youtu.be/SatStJGm9Fk?feature=shared)!*
 
 <br>
 <br>
@@ -25,8 +30,9 @@ Find the repo [here](https://github.com/Rod-Freedom/C10-Logo-Smith).
 ## Table of Contents
 - [License](#license)
 - [Resources](#resources)
-- [Usage](#usage)
 - [Get Started](#get-started)
+- [Usage](#usage)
+- [Demos](#demos)
 - [Contribute](#contribute)
 - [Credits](#credits)
 
@@ -37,9 +43,10 @@ Find the repo [here](https://github.com/Rod-Freedom/C10-Logo-Smith).
 ## Resources
 * For Node:
     * `fs` methods.
-        * `fs.readdirSync` to find the demo image.
-        * `fs.writeFile` to create the README.
-    * `import from`
+      * `fs.writeFile` to create the SVG.
+      * `fs.existsSync` to look for folders.
+      * `fs.mkdirSync` to create folders.
+    * `import from` as modules.
     * `"type": "module"` for exports.
     * `export default` for classes.
     * `export` for functions.
@@ -47,9 +54,14 @@ Find the repo [here](https://github.com/Rod-Freedom/C10-Logo-Smith).
 * `npm` packages:
     * Inquirer for prompting.
     * Chalk for logs' format.
+    * Chalk Animation to animate text in the terminal.
+    * Nanospinner for waiting.
+    * Jest for testing.
+      * `describe()` and `it()` thoroughly applied for organized testing.
 * For JavaScript
     * Promises.
     * Object and array destructuring.
+    * Polymorphism for methods.
     * Classes and constructors.
     * `throw new Error` to stop faulty executions.
     * `setTimeout` executions for UX.
@@ -59,13 +71,13 @@ Find the repo [here](https://github.com/Rod-Freedom/C10-Logo-Smith).
 [(Back to the Top)](#about-the-project)
 
 ## Get Started
-Find a tutorial [here]()!
+*Watch our tutorial [here](https://youtu.be/SatStJGm9Fk?feature=shared)!*
 
-Once you have the repo on your computer running `git clone`, open your command line. Make sure to open the Logo Smith repo folder in your terminal. Use `npm i` to install all the modules needed to run the Smith.
+Once you have the repo on your computer after running `git clone`, open your command line. Make sure to open the Logo Smith repo folder in your terminal. Use `npm i` to install all the modules needed to run the Smith.
 
 First clone:
 ```bash
-$ git clone [repo]
+$ git clone https://github.com/Rod-Freedom/C10-Logo-Smith.git
 ```
 Then install the modules:
 ```bash
@@ -77,28 +89,77 @@ $ npm i
 [(Back to the Top)](#about-the-project)
 
 ## Usage
-Find a tutorial [here]()!
+*Watch our tutorial [**here**](https://youtu.be/SatStJGm9Fk?feature=shared)!*
 
-something.
+**Logo Smith** is easy and intuitive to use. To run it, open the Logo Smith folder in your terminal, then type `node index.js` or `npm start` and hit `enter`.
 ```bash
 $ node index.js
 ```
-> ![Start running the Smith](./images/Starting_Up.GIF)
 
-Next, the Reactor will ask you for your repo and user name. Be sure to write an existing GH repo and user name to continue. If you don't have a license, the Reactor will recommend getting one.  
-> ![Finding your repo](./images/Finding_Repo.GIF)
+<br>
+<br>
 
-After that, you'll ride in automatic; answer the questions and hit `return` after each answer.
-> ![Answering](./images/Answering.GIF)
+You'll then see the intro with a pulse animation.
 
-Finally, you'll be given the option to include a demo in your README. If you choose to do so, you'll need to place an asset in the `./Atomic_README/assets/` directory and press enter. You'll then receive a confirmation that your README is ready. The file will be generated in the `/Atomic_README` folder.
-> ![Answering](./images/Adding_Demo.GIF)
+> ![Run the Smith](./assets/images/Intro_Screenshot.png)
 
+<br>
+<br>
+
+Next, the Smith will ask you for a text to display on your logo. Think of an acronym for it, 4 characters max, or maybe just a single character/number/symbol.
+
+> ![Answering](./assets/images/Acro_Screenshot.png)
+
+<br>
+<br>
+
+Then, you'll choose between circle, triangle and square as your logo shape.
+
+> ![Answering](./assets/images/Shape_Screenshot.png)
+
+<br>
+<br>
+
+Choose a font! They're all cool as hell!
+> ![Answering](./assets/images/Font_Screenshot.png)
+
+<br>
+<br>
+
+Most importantly, choose the color scheme.
+> ![Answering](./assets/images/CS_Screenshot.png)
+
+<br>
+<br>
+
+Finally, you may choose a background for your logo. It's optional, but it's perfect for favicons and profile pics!
+> ![Answering](./assets/images/BG_Screenshot.png)
+
+<br>
+<br>
+
+Once you're done, you'll find your new SVG inside the *your_crafted_svg* folder.
+> ![Answering](./assets/images/end_Screenshot.png)
 
 <br>
 
 [(Back to the Top)](#about-the-project)
 
+## Demos
+You have a ton of options to customize your logo.
+
+You may use any shape, font or color you like!
+
+![RFLS_LS](./assets/demos/RFLS_LS.svg)
+
+![$M7H_LS](./assets/demos/$M7H_LS.svg)
+
+One example without background, perfect for a header.
+![N0BG_LS](./assets/demos/N0BG_LS.svg)
+
+<br>
+
+[(Back to the Top)](#about-the-project)
 
 ## License
 ![GitHub](https://img.shields.io/github/license/Rod-Freedom/C10-Logo-Smith?style=for-the-badge)<br>

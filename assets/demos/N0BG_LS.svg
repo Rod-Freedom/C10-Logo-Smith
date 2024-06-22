@@ -402,8 +402,8 @@
     
                 
                 .cls-1 {
-                    fill: #acbbe1;
-                    stroke: #97aada;
+                    fill: #591a42;
+                    stroke: #3d100e;
                     stroke-miterlimit: 10;
                     stroke-width: 104.03px;
                 }
@@ -423,21 +423,21 @@
                     fill: url(#linear-gradient);
                 }
                 .cls-6 {
-                    fill: #bdb4ad;
+                    fill: rgba(0,0,0,0);
                 }
                 .cls-7 {
                     fill: #000000;
                     opacity: .2;
                 }
                 .cls-7, .cls-8 {
-                    font-family: "Jersey 10", sans-serif;
-                    font-size: 470px;
+                    font-family: "IBM Plex Mono", monospace;
+                    font-size: 350px;
                     font-style: none;
-                    font-weight: 100;
+                    font-weight: 900;
                     text-anchor: middle;
                 }
                 .cls-8 {
-                    fill: #dee4f3;
+                    fill: #bda3b3;
                 }
             </style>
             
@@ -445,24 +445,28 @@
                 <rect class="cls-4" width="1554.6" height="1554.6"/>
             </clipPath>
             
-            <linearGradient id="linear-gradient" x1="778.63" y1="778.63" x2="1337.3" y2="1337.3" gradientTransform="translate(1256.02 -1301.02) rotate(59.67) scale(1.4 1.22) skewX(26.1)" gradientUnits="userSpaceOnUse">
-                <stop offset="0" stop-color="#000000" stop-opacity=".8"/>
-                <stop offset=".2" stop-color="rgba(0,0,0,.57)" stop-opacity=".57"/>
-                <stop offset=".65" stop-color="rgba(0,0,0,.15)" stop-opacity=".15"/>
-                <stop offset=".94" stop-color="#000000" stop-opacity="0"/>
-            </linearGradient>
+            
         </defs>
         
         <g id="Post">
             <g class="cls-2">
                 <rect class="cls-6" width="1554.6" height="1554.6"/>
-                <rect class="cls-5" x="576" y="580.89" width="1358.81" height="1350.27" transform="translate(-520.26 1256.02) rotate(-45)"/>
-                <rect class="cls-1" x="298.4" y="298.4" width="957.8" height="957.8" rx="90" />
+                
+                <path class="cls-1" d="
+                    M689.33,349.47
+                    l-435.37,754.08
+                    c-39.1, 67.72, 9.77, 152.37, 87.97, 152.37
+                    h870.74
+                    c78.19, 0, 127.07-84.65, 87.97-152.37
+                    l-435.37-754.08
+                    c-39.1-67.72-136.84-67.72-175.94,0
+                    Z
+                "/>
                 <text class="cls-7" transform="translate(30 30)">
-                    <tspan class="cls-3" x="777.3" y="910.05">$M7H</tspan>
+                    <tspan class="cls-3" x="777.3" y="1040">N0BG</tspan>
                 </text>
                 <text class="cls-8">
-                    <tspan class="cls-3" x="777.3" y="910.05">$M7H</tspan>
+                    <tspan class="cls-3" x="777.3" y="1040">N0BG</tspan>
                 </text>
             </g>
         </g>

@@ -1,9 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-    <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1554.6 1554.6">
-        <defs>
-            
-            <style>
-                /* cyrillic-ext */
+export default () => {
+    const fonts = `/* cyrillic-ext */
                 @font-face {
                 font-family: 'IBM Plex Mono';
                 font-style: italic;
@@ -399,71 +395,7 @@
                 src: url(https://fonts.gstatic.com/s/robotomono/v23/L0x5DF4xlVMF-BfR8bXMIjhLq3-cXbKD.woff2) format('woff2');
                 unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
                 }
-    
-                
-                .cls-1 {
-                    fill: #acbbe1;
-                    stroke: #97aada;
-                    stroke-miterlimit: 10;
-                    stroke-width: 104.03px;
-                }
-                .cls-2 {
-                    clip-path: url(#clippath);
-                }
-                .cls-3 {
-                    letter-spacing: -.02em;
-                }
-                .cls-4 {
-                    fill: none;
-                }
-                .cls-4, .cls-5, .cls-6 {
-                    stroke-width: 0px;
-                }
-                .cls-5 {
-                    fill: url(#linear-gradient);
-                }
-                .cls-6 {
-                    fill: #bdb4ad;
-                }
-                .cls-7 {
-                    fill: #000000;
-                    opacity: .2;
-                }
-                .cls-7, .cls-8 {
-                    font-family: "Jersey 10", sans-serif;
-                    font-size: 470px;
-                    font-style: none;
-                    font-weight: 100;
-                    text-anchor: middle;
-                }
-                .cls-8 {
-                    fill: #dee4f3;
-                }
-            </style>
-            
-            <clipPath id="clippath">
-                <rect class="cls-4" width="1554.6" height="1554.6"/>
-            </clipPath>
-            
-            <linearGradient id="linear-gradient" x1="778.63" y1="778.63" x2="1337.3" y2="1337.3" gradientTransform="translate(1256.02 -1301.02) rotate(59.67) scale(1.4 1.22) skewX(26.1)" gradientUnits="userSpaceOnUse">
-                <stop offset="0" stop-color="#000000" stop-opacity=".8"/>
-                <stop offset=".2" stop-color="rgba(0,0,0,.57)" stop-opacity=".57"/>
-                <stop offset=".65" stop-color="rgba(0,0,0,.15)" stop-opacity=".15"/>
-                <stop offset=".94" stop-color="#000000" stop-opacity="0"/>
-            </linearGradient>
-        </defs>
-        
-        <g id="Post">
-            <g class="cls-2">
-                <rect class="cls-6" width="1554.6" height="1554.6"/>
-                <rect class="cls-5" x="576" y="580.89" width="1358.81" height="1350.27" transform="translate(-520.26 1256.02) rotate(-45)"/>
-                <rect class="cls-1" x="298.4" y="298.4" width="957.8" height="957.8" rx="90" />
-                <text class="cls-7" transform="translate(30 30)">
-                    <tspan class="cls-3" x="777.3" y="910.05">$M7H</tspan>
-                </text>
-                <text class="cls-8">
-                    <tspan class="cls-3" x="777.3" y="910.05">$M7H</tspan>
-                </text>
-            </g>
-        </g>
-    </svg>
+    `;
+
+    return fonts
+};

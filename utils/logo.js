@@ -6,7 +6,7 @@ export default class Logo {
         this.font = font;
         this.color = color;
         this.bgColor = bgColor;
-        this.textPos = { x: 'calc(1554.6/2)', y: '910.05' };
+        this.textPos = { x: '777.3', y: '910.05' };
     }
 
     bgColorForge () {
