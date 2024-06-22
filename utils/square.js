@@ -9,6 +9,6 @@ export default class Square extends Logo {
     }
 
     figureForge () {
-        return `<rect class="cls-1" x="calc(777.3 - 478.9)" y="calc(777.3 - 478.9)" width="calc(478.9 * 2)" height="calc(478.9 * 2)" rx="90" />`
+        return `<rect class="cls-1" x="298.4" y="298.4" width="957.8" height="957.8" rx="90" />`
     }
 }

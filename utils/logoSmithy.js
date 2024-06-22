@@ -1,6 +1,7 @@
 import Triangle from "./triangle.js";
 import Circle from "./circle.js";
 import Square from "./square.js";
+import fontsFunc from "./fonts.js";
 
 export default ({ figure, ...answersObj }) => {
     let logoObj = {};
@@ -24,6 +25,7 @@ export default ({ figure, ...answersObj }) => {
     const gradientEl = logoObj.bgColor !== 'none' ? logoObj.gradientElForge() : '';
     const shadowEl = logoObj.shadow.element;
     const colors = logoObj.setColors();
+    const fonts = fontsFunc();
 
 
     const code = `<?xml version="1.0" encoding="UTF-8"?>
@@ -31,7 +33,8 @@ export default ({ figure, ...answersObj }) => {
         <defs>
             
             <style>
-                @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jersey+10&family=Jersey+25&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+                ${fonts}
+                
                 .cls-1 {
                     fill: ${colors.fill};
                     stroke: ${colors.stroke};
