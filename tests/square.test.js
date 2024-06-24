@@ -56,7 +56,7 @@ describe('Square class', () => {
             });
             
             it('should return a specific circle element for the svg', () => {
-                const expectedEl = '<rect class="cls-1" x="calc(777.3 - 478.9)" y="calc(777.3 - 478.9)" width="calc(478.9 * 2)" height="calc(478.9 * 2)" rx="90" />';
+                const expectedEl = `<rect class="cls-1" x="${777.3 - 478.9}" y="${777.3 - 478.9}" width="${478.9 * 2}" height="${478.9 * 2}" rx="90" />`;
                 const newSquare = new Square({});
         
                 expect(newSquare.figureForge()).toBe(expectedEl);

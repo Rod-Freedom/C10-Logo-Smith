@@ -31,7 +31,7 @@ describe('Logo class', () => {
 
     describe('textPos property', () => {
         it('should asign a default value for "x" and "y" properties inside the textPos property', () => {
-            const expectPos = { x: 'calc(1554.6/2)', y: '910.05' }
+            const expectPos = { x: '777.3', y: '910.05' }
             const newLogo = new Logo({});
 
             expect(newLogo.textPos.x).toBe(expectPos.x);
@@ -88,7 +88,7 @@ describe('Logo class', () => {
     describe('textElForge method', () => {
         it('should return the text element for the SVG code', () => {
             const inputText = 'TesT';
-            const expectPos = { x: 'calc(1554.6/2)', y: '910.05' }
+            const expectPos = { x: '777.3', y: '910.05' }
             const expectedEl = `<tspan class="cls-3" x="${expectPos.x}" y="${expectPos.y}">${inputText}</tspan>`
             const params = { text: inputText };
 
