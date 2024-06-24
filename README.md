@@ -33,6 +33,7 @@ The process will take you less than a minute, and you'll have a careful selectio
 - [Get Started](#get-started)
 - [Usage](#usage)
 - [Demos](#demos)
+- [Testing](#testing)
 - [Contribute](#contribute)
 - [Credits](#credits)
 
@@ -156,6 +157,22 @@ You may use any shape, font or color you like!
 
 One example without background, perfect for a header.
 ![N0BG_LS](./assets/demos/N0BG_LS.svg)
+
+<br>
+
+[(Back to the Top)](#about-the-project)
+
+## Testing
+For testing, you'll just have to execute `npm test` command in the terminal.
+
+Then install the modules:
+```bash
+$ npm test
+```
+
+It should run 4 test suites and 24 tests in total.
+
+![Testing Demo](./assets/images/Testing_Demo.GIF)
 
 <br>
 
